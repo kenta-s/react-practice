@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import FlavorForm from './components/forms.js';
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -116,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('root')
   const data = JSON.parse(node.getAttribute('data'))
   ReactDOM.render(
-    <Game data={data} />,
+    // <Game data={data} />,
+    <FlavorForm />,
     node
   );
 });

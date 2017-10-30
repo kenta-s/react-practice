@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import FlavorForm from './components/forms.js';
+import SegmentWrapper from './components/segments.js';
 
 function Square(props) {
   return (
@@ -119,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = JSON.parse(node.getAttribute('data'))
   ReactDOM.render(
     // <Game data={data} />,
-    <FlavorForm />,
+    <SegmentWrapper />,
     node
   );
 });
